@@ -9,8 +9,13 @@ const parser = new XMLParser();
 const client = new Client({
     connectionString: process.env.CONNECTION_STRING,
 });
-client.connect();
-console.log('Connection established.')
+client.connect()
+  .then(() => {
+    console.log('Connection established.');
+  })
+  .catch(err => {
+    console.error('Connection Error: ', err);
+  });
 
 async function storeData(drone, pilot) {
     try {
