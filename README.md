@@ -44,7 +44,7 @@ EXECUTE FUNCTION delete_stale_drones();
 
 Since the drone data updates every 2 seconds, the script runs inside a node-cron task scheduled to run every 2 seconds. Being a simple script, there shouldn't be any issue running it every 2 seconds with a cron task. 
 
-## Modules Used 
+## Dependencies
 
     node-cron
     axios
