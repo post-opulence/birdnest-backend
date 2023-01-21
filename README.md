@@ -7,7 +7,7 @@ More information regarding this project can be found [here](https://web.archive.
 
 This simple script fetches data from Reaktor's API then sorts the drones data based on their distance from the bird's nest. If a drone is found violating the No Drone Zone (NDZ), the drone's serial number is used to fetch its pilot's information. The violating drone data and corresponding pilot info is then stored in a Supabase database. The database is setup to delete data 10 mins after it has been inserted or updated. 
 
-## How it works.
+## How it works
 
 This script first connects to a Supabase database using the pg module. 
 
