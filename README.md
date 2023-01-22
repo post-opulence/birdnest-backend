@@ -2,7 +2,7 @@
 
 This is the backend for my [birdnest](https://github.com/post-opulence/birdnest) project. It's built with Javascript and runs on Node.js.
 More information regarding this project can be found [here](https://web.archive.org/web/20221220105911/https://assignments.reaktor.com/birdnest/).
-It is currently self-hosted on my computer. 
+It is hosted on [Flux](https://runonflux.io/), a decentralized cloud infrastructure. 
 
 ## Description
 
@@ -44,7 +44,7 @@ EXECUTE FUNCTION delete_stale_drones();
 
 Since the drone data updates every 2 seconds, the script runs inside a node-cron task scheduled to run every 2 seconds. Being a simple script, there shouldn't be any issue running it every 2 seconds with a cron task. 
 
-## Modules Used 
+## Dependencies
 
     node-cron
     axios
